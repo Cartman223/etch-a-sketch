@@ -12,9 +12,27 @@ html {
 body {
     min-height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #FFEBB2;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.btn-container {
+    position: absolute;
+    top: -3em;
+    
+}
+
+#btn {
+    padding: 0.5em;
 }
 
 #board {
@@ -22,26 +40,26 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    max-width: 80vw;
-    max-height: 80vh;
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
 .row {
-    border-top: solid black 1px;
+    border-top: dotted black 1px;
 }
 
 .row:last-child {
-    border-right: solid black 1px;
+    border-right: dotted black 1px;
 }
 
 .white-square {
     background-color: white;
-    border-left: solid black 1px;
-    border-bottom: solid black 1px;
+    border-left: dotted black 1px;
+    border-bottom: dotted black 1px;
 }
 
 .black-square {
     background-color: black;
-    border-left: solid black 1px;
-    border-bottom: solid black 1px;
+    border-left: dotted black 1px;
+    border-bottom: dotted black 1px;
 }
